@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+font-family: "Quicksand", sans-serif;
+}
+
+body {
+background: #f3f2ef;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+height: 100vh;
+width: 100vw;
+}
+
+html,body {
+font-size: 62.5%;
+height: 100%;
+}
+
+html {
+background: #eee;
+}
+
+.box {
+width: 20vw;
+height: 40vh;
+border-radius: 0.5rem;
+box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+background: #8b9db9;
+position: relative;
+overflow: hidden;
+transform: translate3d(0, 0, 0);
+min-width: 20rem;
+min-height: 35rem;
+}
+
+
+
+
+.box::after {
+content: "";
+display: block;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 11;
+transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+
+.info {
+position:absolute;
+bottom: 0;
+width: 100%;
+height: 45%;
+z-index: 4;
+}
+
+
+
+.location {
+margin-top:1.5rem;
+text-align: center;
+font-weight: 800;
+font-size: 3rem;
+font-weight: 600;
+}
+
+.fa-street-view{
+animation: rotates 3s linear infinite alternate;
+}
+
+@keyframes rotates {
+from {
+
+transform: translateX(-0.5rem);
+}
+to {
+
+transform: translateX(0.5rem);
+
+}
+}
+
+/*  */
+
+.temp {
+margin-top: 2.5rem;
+text-align: center;
+font-size: 3rem;
+}
+
+.temp1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.9rem;
+    }
+
+/* .tempmin_max {
+text-align: center;
+margin-top: 0.3rem;
+font-weight: 300;
+font-size: 1.5rem;
+color: #57606f;
+} */
+
+
+
+@keyframes fas-anime {
+from {
+transform: scale(1.1);
+}
+to {
+transform: scale(1.5)
+}
+}
+
+@media (max-width: 600px) {
+.box {
+width: 90vw;
+height: 80vh;
+}
+
+
+
+.info {
+font-size: 1.5em;
+}
+}
+
+@media (max-height: 500px) {
+.box {
+height: 80vh;
+}
+
+.wave {
+top: 115%;
+}
+}
+
+body > span {
+width: 100vw;
+text-align: center;
+color: grey;
+}
+
+.inputData {
+width: 100%;
+height: 10vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.inputField {
+width: 80%;
+margin: auto;
+border-radius: 5rem;
+padding: 1rem 1rem;
+outline: none;
+font-size: 1.5rem;
+}
+
+.errorMsg {
+text-align: center;
+font-size: 2rem;
+margin: 2rem auto;
+}
+.heading {
+    /* text-align:justify; */
+    font-size: 1.9rem;
+    margin: 1rem auto;
+    }
+
+  
+
+/* CSS */
+.button-17 {
+  align-items: center;
+  margin-top: 20px;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 35px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
